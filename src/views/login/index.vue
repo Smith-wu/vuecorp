@@ -31,7 +31,7 @@ import { getTime } from '@/utils/times'
 let $router = useRouter()
 let $route = useRoute()
 let userStore = useUserStore()
-let loginForm = reactive({username:'admin',password:'111111'})
+let loginForm = reactive({username:'admin',password:'123456'})
 let loading = ref(false)
 let loginFormRef = ref()
 const login = (async ()=>{

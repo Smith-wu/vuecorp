@@ -4,8 +4,11 @@ import type { loginForm,loginResponseData,userInfoResponseData } from "./types";
 
 //用户相关请求接口
 enum API {
-    LOGIN_URL = '/admin/acl/index/login',
-    USER_INFO_URL = '/admin/acl/index/info',
+    // LOGIN_URL = '/admin/acl/index/login',
+    // USER_INFO_URL = '/admin/acl/index/info',
+    // LOGOUT_URL = '/admin/acl/index/logout'
+    LOGIN_URL = '/user/login',
+    USER_INFO_URL = '/user/info',
     LOGOUT_URL = '/admin/acl/index/logout'
 }
 
