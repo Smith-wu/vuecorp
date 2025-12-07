@@ -1,0 +1,24 @@
+
+//全局样式设置
+/* 确保折叠状态下箭头和文字隐藏 */
+.el-menu--collapse {
+  /* 隐藏子菜单箭头 */
+  .el-sub-menu {
+    & > .el-sub-menu__title .el-sub-menu__icon-arrow {
+      display: none;
+    }
+    
+    /* 隐藏标题文字 */
+    & > .el-sub-menu__title span {
+      display: none;
+    }
+    
+    /* 隐藏图标旁边的空白（如果有） */
+    & > .el-sub-menu__title .el-icon {
+      margin-right: 0;
+    }
+  }
+}
+.el-menu{
+  border: none !important;
+}
