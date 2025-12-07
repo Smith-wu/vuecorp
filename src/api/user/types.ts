@@ -20,7 +20,14 @@ export interface userInfoResponseData extends ResponseData{
         routes:string[],
         buttons:string[],
         roles:string[],
-        avater:string,
+        avatar:string,
         name:string,
     }
+}
+export interface userInfo{
+    routes:string[],
+    buttons:string[],
+    roles:string[],
+    avatar:string,
+    name:string
 }

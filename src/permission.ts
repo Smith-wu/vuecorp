@@ -1,6 +1,6 @@
 //路由鉴权
 import router from "./router";
-import nprogress from 'nprogress'
+import * as nprogress from 'nprogress';
 import 'nprogress/nprogress.css'
 import setting from "./setting";
 
@@ -11,7 +11,7 @@ let userStore = useUserStore(pinia)
 
 const whiteList = ['/login']
 //前置守卫
-router.beforeEach(async (to, from, next) => {
+router.beforeEach(async (to, _from, next) => {
     nprogress.start()
     let token = userStore.token
     let username = userStore.userInfo?.name
@@ -45,7 +45,7 @@ router.beforeEach(async (to, from, next) => {
     
 })
 //后置守卫
-router.afterEach((to, from) => {
+router.afterEach((to, _from) => {
     // to and from are both route objects.
     document.title = setting.title + '-' + to.meta.title as string
     nprogress.done()

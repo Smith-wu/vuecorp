@@ -44,7 +44,7 @@ let useUserStore = defineStore('User', {
             let result:any = await reqLogout()
             if(result.code == 200){
                 this.token = ''
-                this.userInfo = {}
+                this.userInfo = {routes: [], buttons: [], roles: [], avatar: '', name: ''}
                 REMOVE_TOKEN()
                 REMOVE_USERINFO()
                 return 'ok'

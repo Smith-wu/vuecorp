@@ -9,11 +9,11 @@
     <div class="center">
         <div class="man">
             <div class="man-title">男士</div>
-            <div class="man-avater"></div>
+            <div class="man-avatar"></div>
         </div>
         <div class="woman">
             <div class="woman-title">女士</div>
-            <div class="woman-avater"></div>
+            <div class="woman-avatar"></div>
         </div>
     </div>
     <div class="rate">
@@ -103,7 +103,7 @@ onMounted(()=>{
                 display: flex;
                 justify-content: center;
             }
-            .man-avater{
+            .man-avatar{
                 flex: 1;
                 background: url(../images/man.png) no-repeat;
                 background:cover;
@@ -122,7 +122,7 @@ onMounted(()=>{
                 display: flex;
                 justify-content: center;
             }
-            .woman-avater{
+            .woman-avatar{
                 flex: 1;
                 background: url(../images/woman.png) no-repeat;
                 background:cover;

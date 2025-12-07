@@ -4,5 +4,5 @@ import type { userInfo } from '@/api/user/types'
 export interface UserState {
     token:string|null;
     menuRoutes:RouteRecordRaw[],
-    userInfo:userInfo|object
+    userInfo:userInfo
 }

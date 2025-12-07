@@ -13,7 +13,6 @@
 </template>
 <script setup lang='ts'>
 import * as echarts from 'echarts'
-import { fa } from 'element-plus/es/locales.mjs';
 import { ref,onMounted } from 'vue';
 const chart = ref()
 onMounted(()=>{

@@ -23,10 +23,10 @@
             <svg-icon slot="icon" name="exit-full" :svgStyle="{width:'18px',height:'18px'}"></svg-icon>
          </el-button>
          <el-button icon="Setting" circle></el-button>
-         <el-avatar class="avater" :src="userStore.userInfo.avatar"></el-avatar>
+         <el-avatar class="avatar" :src="userStore.userInfo?.avatar"></el-avatar>
          <el-dropdown class="dropDown-box" placement="bottom-end" @command="handleCommand">
             <span class="user_Info">
-               欢迎您，{{userStore.userInfo.name}}
+               欢迎您，{{userStore.userInfo?.name}}
                <el-icon class="icon--right">
                <arrow-down />
                </el-icon>
@@ -99,7 +99,7 @@ async function handleCommand(command:string){
    .right{
       display: flex;
       align-items: center;
-      .avater{
+      .avatar{
          margin:0 15px 0 25px;
       }
       .user_Info{
